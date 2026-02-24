@@ -10,11 +10,12 @@ export function ThreeDCardDemo({project, index}) {
     "bg-linear-to-r from-orange-200 via-red-300 to-pink-600",
   ];
   return (
-    <CardContainer className="inter-var w-full flex justify-center px-6 sm:px-6">
+    <CardContainer className="inter-var w-full flex justify-center px-6">
       <CardBody
         className={`
       relative group/card
-      w-full h-full
+      w-full
+      h-auto
       max-w-7xl
       rounded-2xl
       p-5 sm:p-6 md:p-8
@@ -23,11 +24,11 @@ export function ThreeDCardDemo({project, index}) {
       ${GRADIENTS[index % GRADIENTS.length]}
       shadow-2xl
       grid grid-cols-1 md:grid-cols-12
-      gap-6 md:gap-8
+      gap-2 md:gap-8
     `}
       >
         {/* LEFT CONTENT */}
-        <div className="order-2 lg:order-1 md:col-span-7 flex flex-col justify-between">
+        <div className="order-2 lg:order-1 md:col-span-7 flex flex-col gap-6">
           {/* HEADER */}
           <div>
             {/* YEAR */}
@@ -65,7 +66,7 @@ export function ThreeDCardDemo({project, index}) {
             </CardItem>
 
             {/* FEATURES */}
-            <CardItem translateZ={90} className="mt-5 sm:mt-6">
+            <CardItem translateZ={90} className="mt-5 hidden sm:mt-6 sm:block">
               <ul className="space-y-2 text-xs sm:text-sm text-black/80">
                 {project.features.map((feature) => (
                   <li key={feature} className="flex gap-2">
@@ -78,7 +79,7 @@ export function ThreeDCardDemo({project, index}) {
           </div>
 
           {/* STACK + LINKS */}
-          <div className="mt-6">
+          <div className="mt-auto">
             {/* TECH STACK */}
             <CardItem
               translateZ={100}
@@ -136,13 +137,12 @@ export function ThreeDCardDemo({project, index}) {
         </div>
 
         {/* RIGHT IMAGE */}
-        <CardItem
-          translateZ={120}
-          className="order-1 lg:order-2 md:col-span-5 h-56 sm:h-72 md:h-full"
-        >
+        <CardItem className="order-1 lg:order-2 md:col-span-5 h-56 sm:h-72 md:h-auto">
           <img
             src={project.image}
             alt={project.title}
+            loading="lazy"
+            decoding="async"
             className="
           w-full h-full
           object-cover

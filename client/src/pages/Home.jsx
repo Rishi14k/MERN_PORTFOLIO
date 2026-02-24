@@ -25,7 +25,7 @@ const Home = () => {
 
   const stats = [
     {label: "Internship", value: "6 Months"},
-    {label: "Projects Built", value: "10+"},
+    {label: "Projects", value: "10+"},
     {label: "Skills", value: "9+"},
     {label: "Certificates", value: "4+"},
   ];
@@ -143,7 +143,7 @@ const Home = () => {
             <div
               className=" flex flex-wrap
   gap-6 md:gap-10
-  justify-center sm:justify-start
+ sm:justify-start
   text-center sm:text-left"
             >
               {stats.map((item) => (
@@ -151,10 +151,10 @@ const Home = () => {
                   key={item.label}
                   className="home-stat opacity-0 group cursor-default"
                 >
-                  <p className="text-xl md:text-3xl font-bold text-secondary group-hover:text-secondary/60 transition-colors">
+                  <p className="text-lg md:text-3xl font-bold text-secondary group-hover:text-secondary/60 transition-colors">
                     {item.value}
                   </p>
-                  <p className="font-mono text-[14px] text-muted-primary-foreground/30 font-light uppercase tracking-wider mt-1">
+                  <p className="font-mono text-[12px] text-muted-primary-foreground/30 font-light uppercase tracking-wider mt-1">
                     {item.label}
                   </p>
                 </div>

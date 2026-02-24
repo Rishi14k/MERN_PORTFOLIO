@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: "01",
-    image: "./p1.png",
+    image: "./p1.webp",
     roman: "I",
     title: "Bus Tracking",
     subtitle: "Real-time public transport tracking platform",
@@ -30,7 +30,7 @@ export const projects = [
   {
     id: "02",
     roman: "II",
-    image: "./p2.png",
+    image: "./p2.webp",
     title: "Hostel DMS",
     subtitle: "Daily grocery and vegetable entry system",
     description:
@@ -51,7 +51,7 @@ export const projects = [
   },
   {
     id: "03",
-    image: "./p3.png",
+    image: "./p3.webp",
     roman: "III",
     title: "Idea Hub",
     subtitle: "Platform for sharing and exploring startup ideas",
@@ -72,7 +72,7 @@ export const projects = [
   },
   {
     id: "04",
-    image: "./p4.png",
+    image: "./p4.webp",
     roman: "IV",
     title: "Cheat Code",
     subtitle: "HTML cheat sheet for quick reference",
@@ -93,7 +93,7 @@ export const projects = [
   },
   {
     id: "05",
-    image: "./p5.png",
+    image: "./p5.webp",
     roman: "V",
     title: "Mobile Fix",
     subtitle: "Mobile repair service website",
@@ -113,7 +113,7 @@ export const projects = [
   },
   {
     id: "06",
-    image: "./p6.png",
+    image: "./p6.webp",
     roman: "VI",
     title: "K-72 Clone",
     subtitle: "Animated website clone",
@@ -134,7 +134,7 @@ export const projects = [
   },
   {
     id: "07",
-    image: "./p7.png",
+    image: "./p7.webp",
     roman: "VII",
     title: "Guitar World",
     subtitle: "UI-focused music website",

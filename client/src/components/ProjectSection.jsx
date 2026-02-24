@@ -34,8 +34,8 @@ const GRADIENTS = [
       />
 
       {/* CONTENT */}
-      <div className="relative z-10 max-w-7xl w-full h-[100vh]">
-        <ThreeDCardDemo project={project} index={index}/>
+      <div className="relative z-10 max-w-7xl w-full min-h-screen">
+        <ThreeDCardDemo project={project} index={index} />
 
         <div className="absolute  left-1/2 -translate-x-1/2 flex flex-col items-center gap-3">
           <span className="text-xs tracking-widest uppercase text-black/60 font-bold">

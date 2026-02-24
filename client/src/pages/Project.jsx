@@ -56,7 +56,7 @@ useEffect(() => {
     <>
       <div
         ref={containerRef}
-        className="scene min-w-screen min-h-screen flex flex-col bg-slate-950 overflow-x-clip"
+        className="scene w-full min-h-screen flex flex-col bg-slate-950 overflow-x-clip"
       >
         <div className="mx-auto w-screen h-full flex-1 flex flex-col">
           <ReactLenis root>

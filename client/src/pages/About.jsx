@@ -74,8 +74,10 @@ const About = () => {
 
                <div className="absolute inset-0 border border-white/20 rounded-3xl backdrop-blur-sm overflow-hidden shadow-2xl">
                  <img
-                   src="/me.png" // Replace with your image
+                   src="/me.webp" // Replace with your image
                    alt="Rishi Kothari"
+                   loading="lazy"
+                   decoding="async"
                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                  />
                </div>

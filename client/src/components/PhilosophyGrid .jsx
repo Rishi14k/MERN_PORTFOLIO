@@ -75,7 +75,10 @@ const PhilosophyGrid = ({items}) => {
   }, []);
 
   return (
-    <div ref={containerRef} className="grid gap-12 mb-4 font-bold px-4 md:px-0 overflow-clip">
+    <div
+      ref={containerRef}
+      className="grid gap-12 mb-4 font-bold px-4 md:px-0 overflow-clip"
+    >
       {items.map((item, index) => (
         <figure
           key={index}
@@ -88,6 +91,8 @@ const PhilosophyGrid = ({items}) => {
           <img
             src={item.image}
             alt={item.alt}
+            loading="lazy"
+            decoding="async"
             /* Changed w-80 to w-full max-w-sm to be fluid on mobile */
             className="w-70 max-w-sm md:w-80 h-[18rem] md:h-96 object-cover rounded-2xl"
           />
