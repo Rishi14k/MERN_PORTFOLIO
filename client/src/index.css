@@ -185,3 +185,6 @@ body{
 .cta-btn {
   @apply transition-all duration-300;
 }
+button:hover{
+  cursor: pointer;
+}
