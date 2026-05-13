@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://k-rishi-mern.onrender.com/sitemap.xml
